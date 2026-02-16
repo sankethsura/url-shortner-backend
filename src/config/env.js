@@ -10,12 +10,4 @@ const env = {
   baseUrl: process.env.BASE_URL || "http://localhost:8000",
 };
 
-// log which env vars are set (hides actual values for security)
-console.log("ENV CHECK:", {
-  DATABASE_URL: env.databaseUrl ? env.databaseUrl.substring(0, 25) + "..." : "NOT SET",
-  PORT: env.port,
-  FRONTEND_URL: env.frontendUrl,
-  BASE_URL: env.baseUrl,
-});
-
 module.exports = { env };
